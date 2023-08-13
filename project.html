@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JP FITNESS</title>
+</head>
+<link rel="stylesheet" href="style1.css">
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+        background: url('back.jpg');
+        background-size: cover;
+    }
+    .left{
+        display: inline-block;
+        position: absolute;
+        left: 34px;
+        top: 20px;
+        color: whitesmoke;
+    }
+    .left img{
+        width: 63px;
+    }
+    .left div{
+        text-align: center;
+        line-height: 19px;
+        text-align: center;
+    }
+    .mid{
+        display: block;
+        width: 39%;
+        margin: 20px auto ;
+        /* border: 2px solid rgb(165, 183, 6); */
+    }
+    .right{
+        position: absolute;
+        right: 34px;
+        color: white;
+        top: 20px;
+        display: inline-block;
+        /* border: 2px solid yellow; */
+    }
+    .navbar{
+        display: inline-block;
+    }
+    .navbar li{
+        display: inline-block;
+    }
+    .navbar li a {
+        color: wheat;
+        text-decoration: none;
+        padding: 34px 20px;
+    } 
+    .navbar li a:hover ,.navbar li a.active {
+        text-decoration: underline;
+        color: lawngreen;
+    } 
+    .btn{
+        margin: 0px 9px;
+        border: 2px solid gray;
+        border-radius: 10px;
+        font-size: 15px;
+        cursor: pointer;
+        background-color: black;
+        color: white;
+    }
+    .btn:hover{
+        background-color: rgb(182, 182, 9);
+    }
+    .container{
+        /* border: 2px solid white; */
+        margin: 80px 80px 105px 350px;
+        padding: 50px;
+        width: 36%;
+        border-radius: 28px;
+    }
+    h1{
+        color: wheat;
+        text-align: center;
+    }
+    .form-group input{
+        text-align: center;
+        display: block;
+        width: 400px;
+        padding: 10px;
+        border: 2px solid black;
+        margin: 11px auto;
+        border-radius: 10px;
+    }
+    .container button{
+        display: block;
+        width: 23%;
+        margin: auto;
+    }
+</style>
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="logo.jpg" alt="">
+            <div>Jp fitness</div>
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Fitness</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join The Best Gym Of India Now</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <Input type="text" name="" placeholder="enter your name"></Input>
+            </div>
+            <div class="form-group">
+                <Input type="text" name="" placeholder="enter your age"></Input>
+            </div>
+            <div class="form-group">
+                <Input type="text" name="" placeholder="enter your age"></Input>
+            </div>
+            <div class="form-group">
+                <Input type="text" name="" placeholder="enter your address"></Input>
+            </div>
+            <button class="btn">submit</button>
+        </form>
+    </div>
+</body>
+</html>
